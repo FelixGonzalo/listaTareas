@@ -7,10 +7,10 @@ var btn = document.getElementById("btn-agregar");
 var agregarTarea = function (){ 
     var tarea = tareaInput.value;
     var nuevaTarea = document.createElement("li"),
-        textoTarea = dsocument.createElement("p"),
-        contenido = document.createTextNode(tarea);
-        botonBorrar = document.createElement("div");
-        botonBorrarTexto = document.createElement("p");
+        textoTarea = document.createElement("p"),
+        contenido = document.createTextNode(tarea),
+        botonBorrar = document.createElement("div"),
+        botonBorrarTexto = document.createElement("p"),
         botonBorrarContenido = document.createTextNode("X");
 
     if (tarea != "") {
@@ -46,3 +46,6 @@ function eventoEliminarTarea() {
     }
 }
 eventoEliminarTarea();
+
+
+

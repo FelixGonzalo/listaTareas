@@ -7,15 +7,13 @@ var btn = document.getElementById("btn-agregar");
 var agregarTarea = function (){ 
     var tarea = tareaInput.value;
     var nuevaTarea = document.createElement("li"),
-        textoTarea = document.createElement("p"),
+        textoTarea = dsocument.createElement("p"),
         contenido = document.createTextNode(tarea);
         botonBorrar = document.createElement("div");
         botonBorrarTexto = document.createElement("p");
         botonBorrarContenido = document.createTextNode("X");
 
-    if (tarea === "") {
-        alert("agrega una tarea");
-    } else {
+    if (tarea != "") {
         botonBorrarTexto.appendChild(botonBorrarContenido);
         botonBorrar.appendChild(botonBorrarTexto);
         nuevaTarea.appendChild(botonBorrar);
@@ -48,4 +46,3 @@ function eventoEliminarTarea() {
     }
 }
 eventoEliminarTarea();
-

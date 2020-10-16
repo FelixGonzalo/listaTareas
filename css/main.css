@@ -10,6 +10,11 @@ body{
     font-family: cursive,sans-serif;
 }
 
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
 /* ------ formulario ----- */
 
 .formulario {
@@ -52,16 +57,37 @@ body{
 
 .tareas {
     margin-left: 10%;
+    margin-right: 10%;
     margin-top: 30px;
     font-size: 1.5em;
 }
 
 .tareas ul li {
     list-style: none;
-    margin-bottom: 20px;
+    word-wrap: break-word;
+    position: relative;
+    margin-bottom: 5px;
 }
 
-.tareas ul li p:hover{
-    text-decoration: line-through;
+.tareas ul li div{
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    left: -25px;
+}
+
+.tareas ul li div p {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.tareas ul li div:hover{
+    background-color: rgb(221, 117, 117);
     cursor: pointer;
 }
